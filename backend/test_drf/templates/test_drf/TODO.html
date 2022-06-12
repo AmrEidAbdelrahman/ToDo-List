@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TODO LIST</title>
+</head>
+<body>
+	<div class="container">
+		<form method="POST">
+			<input type="text" name="">
+			<button class="btn btn-primary" type="submit">ADD</button>
+		</form>
+		<div>
+			{% for task in tasks %}
+			<div>
+				<span>{{task.content}}</span>
+				<a href="#" class="btn btn-info">Edit</a>
+				<a href="#" class="btn btn-danger">-</a>
+			</div>
+			{% endfor %}
+		</div>
+			
+	</div>
+</body>
+</html>
