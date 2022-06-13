@@ -25,7 +25,7 @@ __webpack_require__.r(__webpack_exports__);
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
   "default": () => (/* binding */ pages),
-  "getStaticProps": () => (/* binding */ getStaticProps)
+  "getServerSideProps": () => (/* binding */ getServerSideProps)
 });
 
 // EXTERNAL MODULE: external "react/jsx-runtime"
@@ -45,7 +45,7 @@ var Home_module_default = /*#__PURE__*/__webpack_require__.n(Home_module);
 
 
 
-const getStaticProps = async ()=>{
+const getServerSideProps = async ()=>{
     const res = await fetch('http://127.0.0.1:8000/api/tasks/');
     const data = await res.json();
     console.log(data);
